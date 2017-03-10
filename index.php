@@ -67,10 +67,13 @@ $app->post('/message', function(Request $request) use ($app) {
     return $app->json($payload, $code);
 });
 
-$app->put('/message/{message_id}', function($message_id,Request $request) use ($app) {
+$app->put('/message/{message_id}', function($message_id, Request $request) use ($app) {
     $_message = $request->get('message');
     $message = Message::find($message_id);
     $message->body = $_message;
+
+  
+   
     $message->save();
 
     if ($message->id) {
@@ -90,7 +93,7 @@ $app->delete('/message/{message_id}', function($message_id) use ($app) {
     if ($message->exists) {
         return new Response('', 400);
     } else {
-        return new Response('', 204);
+        return new Response('Your message is deleted', 204);
     }
 });
 
