@@ -1,0 +1,9 @@
+{
+    "require": {
+        "silex/silex": "2.0",
+        "illuminate/database": "5.2"
+    },
+    "autoload": {
+        "psr-4": {"Todos\\": "src/Todos"}
+    }
+}

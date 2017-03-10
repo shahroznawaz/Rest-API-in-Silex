@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteCond %{Request_Filename} !-f
+RewriteCond %{Request_Filename} !-d
+RewriteRule ^ index.php [QSA,L]
+
+RewriteCond %{HTTP:Authorization} ^(.+)$
+RewriteRule ^ - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
