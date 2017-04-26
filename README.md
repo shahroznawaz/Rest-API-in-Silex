@@ -6,5 +6,6 @@ Simple rest api in silex with user authentication
 * Run `composer install` 
 
 # Complete Article
-You can find the complete article here [https://www.cloudways.com/blog/create-rest-api-silex/](http://https://www.cloudways.com/blog/create-rest-api-silex/)
+You can find the complete article here [https://www.cloudways.com/blog/create-rest-api-silex/]
+(https://www.cloudways.com/blog/create-rest-api-silex/)
 
