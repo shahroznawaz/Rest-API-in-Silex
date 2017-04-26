@@ -7,5 +7,4 @@ Simple rest api in silex with user authentication
 
 # Complete Article
 You can find the complete article here [https://www.cloudways.com/blog/create-rest-api-silex/]
-(https://www.cloudways.com/blog/create-rest-api-silex/)
 
